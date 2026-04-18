@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #f5f5f5;
+}
+
+:root {
+    --black: #000000;
+    --deep-green: #0f3d2e;
+    --emerald: #00a86b;
+    --gold: #d4af37;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, var(--black), var(--deep-green));
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gold);
+}
+
+nav h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(15, 61, 46, .85)), 
+                url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1600&q=80') 
+                center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: var(--gold);
+}
+
+header span {
+    color: var(--emerald);
+}
+
+header p {
+    max-width: 600px;
+    margin: 20px 0;
+    color: #ddd;
+}
+
+header button {
+    padding: 14px 35px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(45deg, var(--gold), var(--emerald));
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+header button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--gold);
+}
+
+section {
+    padding: 100px 8%;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--gold);
+}
+
+/* ABOUT */
+#about {
+    background: var(--deep-green);
+    text-align: center;
+    line-height: 1.8;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+/* MENU */
+#menu {
+    background: #000;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-card {
+    background: linear-gradient(145deg, #000, var(--deep-green));
+    border: 1px solid var(--gold);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: .4s;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px var(--emerald);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: var(--emerald);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* RESERVATION */
+#reservation {
+    background: linear-gradient(135deg, var(--black), var(--deep-green));
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #000;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid var(--gold);
+}
+
+form input, form select {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+}
+
+form button {
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(45deg, var(--gold), var(--emerald));
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--gold);
+}
+
+/* CONTACT */
+#contact {
+    background: #000;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid var(--gold);
+}
+
+footer {
+    background: var(--deep-green);
+    padding: 25px;
+    text-align: center;
+    color: #ccc;
+    border-top: 1px solid var(--gold);
+}
+
+@media(max-width: 768px) {
+    header h2 {
+        font-size: 40px;
+    }
+    nav ul {
+        display: none;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Easy | Elevated Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>OVER EASY</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Welcome to <span>Over Easy</span></h2>
+        <p>Where bold flavors meet refined elegance. A modern dining experience wrapped in black sophistication, emerald richness, and golden luxury.</p>
+        <button onclick="document.getElementById('reservation').scrollIntoView()">Book a Table</button>
+    </header>
+
+    <section id="about">
+        <h2>Our Story</h2>
+        <p>Over Easy was crafted to redefine comfort cuisine with a luxurious twist. Inspired by timeless culinary artistry and modern creativity, we blend premium ingredients with elegant presentation. Every plate is designed to turn simple moments into unforgettable experiences.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Signature Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80">
+                <h3>Golden Sunrise Omelette</h3>
+                <p>Farm fresh eggs, herbs, aged cheese.</p>
+                <div class="price">$18</div>
+            </div>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80">
+                <h3>Emerald Avocado Toast</h3>
+                <p>Sourdough, smashed avocado, poached egg.</p>
+                <div class="price">$16</div>
+            </div>
+            <div class="menu-card">
+                <img src="data:image/jpeg;base64,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">
+                <h3>Black Truffle Benedict</h3>
+                <p>Poached eggs, truffle hollandaise, brioche.</p>
+                <div class="price">$24</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation">
+        <h2>Reserve Your Table</h2>
+        <form onsubmit="event.preventDefault(); alert('Reservation received! We look forward to serving you at Over Easy.');">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="date" required>
+            <input type="time" required>
+            <select required>
+                <option value="">Number of Guests</option>
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3-4 People</option>
+                <option>5+ People</option>
+            </select>
+            <button type="submit">Confirm Reservation</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Visit Over Easy</h2>
+        <p>Over Easy, Marikina, 1800 Metro Manila</p>
+        <p>Email: reservations@overeasy.com | Phone: +123 456 7890</p>
+        <iframe src="https://maps.google.com/maps?q=Over Easy, Marikina, 1800 Metro Manila&output=embed"></iframe>
+    </section>
+
+    <footer>
+        © 2026 Over Easy. Crafted in Black, Green & Gold.
+    </footer>
+</body>
+</html>
